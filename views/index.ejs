@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>cotera.es Tecnología y Diseño Web</title>
+  </head>
+  <body>
+
+	<header>
+    		<h1>cotera.es Tecnología y Diseño Web</h1>
+    </header>
+    <article>
+        <p>Edificio Impulsa</p>
+        <p>Parque Científico Tecnológico de Gijón</p>
+        <p>Los Prados, 166</p>
+        <p>33203 Gijón</p>
+        <p>Asturias</p>
+    </article>
+
+    <article>
+    	<h2>Activities</h2>
+    	<ul>
+	    	<% activities.forEach( (activity) => { %>
+	    		<li> <%= activity.name %> <%= activity.money %> </li>
+	    	<% }) %>   
+    	</ul> 		
+    </article>
+
+    <footer>
+    	<p><strong>correo@cotera.es</strong></p>
+        <p>Teléfono: <strong>(+34) 985 99 18 07</strong></p>
+        <p>Móvil: <strong>(+34) 699 71 44 21</strong></p>
+    </footer>
+  </body>
+</html>
