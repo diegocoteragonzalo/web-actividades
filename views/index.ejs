@@ -24,6 +24,7 @@
 	    		<li> <%= activity.name %> <%= activity.money %> </li>
 	    	<% }) %>   
     	</ul>
+    	<h3>Donate</h3>
     	<form method="POST" action="/activities/donate">
     		<input placeholder="your name" type="text" name="userName">
     		<input placeholder="password" type="text" name="password">
@@ -34,7 +35,13 @@
     		</select>
     		<input placeholder="amount of money" type="text" name="money">
     		<button type="submit">Donate</button>
-    	</form> 		
+    	</form>
+    	<h3>Check user money</h3>
+     	<form method="POST" action="/users/check">
+    		<input placeholder="your name" type="text" name="userName">
+    		<input placeholder="password" type="text" name="password">
+    		<button type="submit">Check</button>
+    	</form>   			
     </article>
 
     <footer>
